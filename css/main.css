@@ -1,3 +1,26 @@
+/* Font faces */
+
+@font-face {
+	font-family: 'Nunito';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/Nunito-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Nunito';
+	font-style: normal;
+	font-weight: 700;
+	src: url('fonts/Nunito-SemiBold.ttf');
+}
+
+@font-face {
+	font-family: 'Varela Round';
+	font-style: normal;
+	font-weight: 400;
+	src: url('fonts/VarelaRound-Regular.ttf');
+}
+
 .carousel-inner .carousel-item:nth-child(1) .carousel-caption {
 	/* Example child selector */
 }
@@ -64,21 +87,170 @@
 	/*opacity: .75;*/
 }
 
+#mainNav.navbar-shrink .nav-link.active {
+	color: #52ACFF;
+	border-bottom: .25rem solid #52ACFF;
+}
+
+#mainNav.navbar-shrink .nav-link:hover {
+	color: #52ACFF;
+}
+
 .carousel-indicators li {
 	background-color: #474545;
 }
 
-#about .col-md {
-	padding: 1em 0;
+#about .sport {
+	padding: 2em;
+	padding-bottom: 3em;
 }
 
-#about i {
+.sport:hover {
+	cursor: pointer;
+}
+
+#about .sport-icon {
 	font-size: 8rem;
 }
 
 .about-section {
-	padding: 0px;
+	padding: ;
 	background: none;
+}
+
+.about-section p {
+	margin: 0px;
+}
+
+.info-link {
+	/*display: block;*/
+	position: absolute;
+	bottom: 10px;
+	right: 30px;
+	font-size: 1rem;
+	font-weight: lighter;
+	line-height: 1.5;
+	color: white;
+	text-align: right;
+	padding-top: 1rem;
+	transition: all .5s linear;
+	color: #fff;
+}
+
+/*.info-link span:after {
+	color: #fff;
+	display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 900;
+    content: "\f105";
+}*/
+
+.info-link i {
+	vertical-align: middle;
+	padding-right: 10px;
+	transition: all .5s linear;
+}
+
+.info-link:hover {
+	color: #fff;
+}
+
+.sport:hover .info-link i {
+	color: white;
+	padding-right: 0px;
+}
+
+.sport:nth-child(1) {
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #64a19d;
+}
+
+.sport:nth-child(2) {
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #64a19d;
+}
+
+.sport:nth-child(3) {
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #64a19d;
+}
+
+.sport:hover {
+	background: transparent;
+}
+
+.about-section {
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/sport-bg-00.jpg) center no-repeat;
+	background-size: cover;
+}
+
+.projects-section {
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/principle-bg-00.jpg) center no-repeat;
+	background-size: cover;
+	padding: 10rem 0;
+}
+
+.signup-section {
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/contact-bg-00.jpg) center no-repeat;
+	background-size: cover;
+	border-top: 4px solid #28a745;
+}
+
+.signup-section .form input, .signup-section .form select {
+	-webkit-box-shadow: 0 .1875rem .1875rem 0 rgba(0,0,0,.1) !important;
+	box-shadow: 0 .1875rem .1875rem 0 rgba(0,0,0,.1) !important;
+	padding: 1.25rem 2rem;
+	height: auto;
+	font-family: 'Varela Round';
+	font-size: 80%;
+	text-transform: uppercase;
+	letter-spacing: .15rem;
+	border: 0;
+}
+
+.about-section h2, .projects-section h2, .signup-section h2 {
+	font-size: 2.5rem;
+	color: #000;
+}
+
+.signup-section i {
+	color: #000;
+}
+
+.projects-section .card button.btn.btn-link {
+	-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75)!important;
+	-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75)!important;
+	box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75)!important;
+	color: #000;
+	font-family: "Nunito";
+	font-weight: bolder;
+}
+
+.projects-section .card button.btn.btn-link:hover, .projects-section .card button.btn.btn-link:focus {
+	text-decoration: underline;
+	border-color: linear-gradient(115deg, #52ACFF 25%, #FFE32C 100%);
+	/*-webkit-text-fill-color: transparent;*/
+	/*-webkit-background-clip: text;*/
+	/* https://codepen.io/amberweinberg/pen/dzJERg */
+}
+
+.card {
+	/*background: rgba(255, 255, 255, .5);*/
+	background-color: transparent;
+}
+
+.form-row .ask {
+	color: #626466;
+}
+
+.form-row .ask:hover {
+	color: #626466;
+	text-decoration: underline;
+}
+
+.experience {
+	color: #626466;
 }
 
 @media screen and (min-width: 768px) {
