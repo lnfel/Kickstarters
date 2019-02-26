@@ -14,7 +14,7 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
@@ -42,7 +42,7 @@
             <a class="nav-link js-scroll-trigger" href="#about">Sports</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+            <a class="nav-link js-scroll-trigger" href="#projects">Principles</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
@@ -73,7 +73,7 @@
       <li data-target="#header-slide" data-slide-to="2"></li>
     </ol>
 
-    <a href="#about" class="btn btn-success js-scroll-trigger">Enroll Now</a>
+    <a href="#signup" class="btn btn-success js-scroll-trigger">Enroll Now</a>
 
     <!-- Carousel Slide Container -->
     <div class="carousel-inner">
@@ -114,88 +114,129 @@
       </div>
       <img src="img/ipad.png" class="img-fluid" alt="">
     </div> -->
-    <div class="container">
+    <div class="sport-container">
+      <h2 class="text-center">Courses</h2>
       <div class="row">
-        <div class="col-md bg-primary">
+        <div class="sport col-md bg-primary">
           <div class="row">
-            <div class="col">
-              <i class="far fa-futbol"></i>
+            <div class="col pb-2">
+              <i class="sport-icon far fa-futbol"></i>
             </div>
           </div>
           <h3>Soccer</h3>
+          <p>A game played by two teams of eleven players with a round ball that may not be touched with the hands or arms during play except by the goalkeepers.</p>
+          <!-- The object of the game is to score goals by kicking or heading the ball into the opponents' goal. -->
+          <a href="#" class="info-link"><span>Learn more <i class="fas fa-angle-right"></i></span></a>
         </div>
-        <div class="col-md bg-success">
+        <div class="sport col-md bg-success">
           <div class="row">
-            <div class="col">
-              <i class="fas fa-basketball-ball"></i>
+            <div class="col pb-2">
+              <i class="sport-icon fas fa-basketball-ball"></i>
             </div>
           </div>
+          <h3>Basketball</h3>
+          <p>A game played between two teams of five players in which goals are scored by throwing a ball through a netted hoop fixed above each end of the court.</p>
+          <a href="#" class="info-link"><span>Learn more <i class="fas fa-angle-right"></i></span></a>
         </div>
-        <div class="col-md bg-warning">
+        <div class="sport col-md bg-warning">
           <div class="row">
-            <div class="col">
-              <i class="fas fa-volleyball-ball"></i>
+            <div class="col pb-2">
+              <i class="sport-icon fas fa-volleyball-ball"></i>
             </div>
           </div>
+          <h3>Volleyball</h3>
+          <p>A game for two teams, usually of six players, in which a large ball is hit by hand over a high net, the aim being to score points by making the ball reach the ground on the opponent's side of the court.</p>
+          <a href="#" class="info-link"><span>Learn more <i class="fas fa-angle-right"></i></span></a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="projects-section bg-light">
-    <div class="container">
-
-      <!-- Featured Project Row -->
-      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-        <div class="col-xl-8 col-lg-7">
-          <img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt="">
-        </div>
-        <div class="col-xl-4 col-lg-5">
-          <div class="featured-text text-center text-lg-left">
-            <h4>Shoreline</h4>
-            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+  <section id="projects" class="projects-section">
+    <div class="principles-container">
+      <h2 class="text-center">Principles</h2>
+      <!-- Principles Accordion -->
+      <div class="accordion" id="principles">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link dropdown-toggle" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Learning to Listen
+              </button>
+            </h5>
           </div>
-        </div>
-      </div>
 
-      <!-- Project One Row -->
-      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-        <div class="col-lg-6">
-          <img class="img-fluid" src="img/demo-image-01.jpg" alt="">
-        </div>
-        <div class="col-lg-6">
-          <div class="bg-black text-center h-100 project">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-center text-lg-left">
-                <h4 class="text-white">Misty</h4>
-                <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
-                <hr class="d-none d-lg-block mb-0 ml-0">
-              </div>
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#principles">
+            <div class="card-body">
+              One foundation of learning starts with the ability to listen well. We lead by example, teaching children to imitate actions and sounds. Slowly, we progress to the concept of following instructions.
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Project Two Row -->
-      <div class="row justify-content-center no-gutters">
-        <div class="col-lg-6">
-          <img class="img-fluid" src="img/demo-image-02.jpg" alt="">
-        </div>
-        <div class="col-lg-6 order-lg-first">
-          <div class="bg-black text-center h-100 project">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-center text-lg-right">
-                <h4 class="text-white">Mountains</h4>
-                <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
-                <hr class="d-none d-lg-block mb-0 mr-0">
-              </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed dropdown-toggle" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Sports specific Motor skills
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#principles">
+            <div class="card-body">
+              Basic sports movements and skills introduced in a developmental age appropriate way. For soccer we teach them how to use their feet instead of their hands, For basketball and volleyball we focus on how to toss and bounce the ball.
             </div>
           </div>
         </div>
-      </div>
 
-    </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed dropdown-toggle" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Playing to Learn
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#principles">
+            <div class="card-body">
+              Our programs uses fun and engaging practices that are age appropriate and that help children build a long lasting appreciation for playing sports over time.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+              <button class="btn btn-link dropdown-toggle" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                Playing with purpose
+              </button>
+            </h5>
+          </div>
+
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#principles">
+            <div class="card-body">
+              Basic roles and functions of the proper gameplay, concepts of defending and attacking are introduced through mini games. This allows the child to progressively ease in to team play scenarios.
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header" id="headingFive">
+            <h5 class="mb-0">
+              <button class="btn btn-link dropdown-toggle" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                Achieving with Others
+              </button>
+            </h5>
+          </div>
+
+          <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#principles">
+            <div class="card-body">
+              Competition through Team games of 2v2 and 3v3 are introduced, highlighting the values of sportsmanship and teamwork to go with a higher level of physical ability.
+            </div>
+          </div>
+        </div>
+      </div> <!-- accordion -->
+    </div> <!-- container -->
   </section>
 
   <!-- Signup Section -->
@@ -204,12 +245,108 @@
       <div class="row">
         <div class="col-md-10 col-lg-8 mx-auto text-center">
 
-          <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-          <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+          <i class="fas fa-book-open fa-2x mb-2"></i>
+          <h2 class="">Enroll</h2>
+          <p>Or get a quote from us.</p>
 
-          <form class="form-inline d-flex">
-            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
-            <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+          <form class="form needs-validation" method="" action="" novalidate>
+            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address..." pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required>
+            <div class="invalid-feedback text-left">
+              Please input E-mail!
+            </div>
+            <!-- <button type="submit" class="btn btn-primary mx-auto">Subscribe</button> -->
+            <div class="form-row">
+              <div class="col mt-2">
+                <input type="text" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputParentLastName" placeholder="Parent Last Name" required>
+                <div class="invalid-feedback text-left">
+                  Guardian's last name is required.
+                </div>
+              </div>
+              <div class="col mt-2">
+                <input type="text" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputParentFirstName" placeholder="Parent First Name" required>
+                <div class="invalid-feedback text-left">
+                  Please include your first name as well.
+                </div>
+              </div>
+            </div>
+
+            <div class="child form-row">
+              <div class="col-md mt-2">
+                <input type="text" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputChildLastName" name="cln1" placeholder="Child Last Name" required>
+                <div class="invalid-feedback text-left">
+                  Mind including the child's last name.
+                </div>
+              </div>
+              <div class="col-md mt-2">
+                <input type="text" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputChildFirstName" name="cfn1" placeholder="Child First Name" required>
+                <div class="invalid-feedback text-left">
+                  How about the first name.
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="col text-left mt-3">
+                <a class="ask" href="#"><i class="far fa-plus-square"></i><span> Got other children? Enroll them too!</span></a>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="col-md mt-2">
+                <select class="custom-select bg-light form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputChildLastName" required>
+                  <option selected disabled>Age range</option>
+                  <option value="">2-3 yrs old</option>
+                  <option value="">2-5 yrs old</option>
+                  <option value="">6-8 yrs old</option>
+                  <option value="">9-12 yrs old</option>
+                  <option value="">12-14 yrs old</option>
+                </select>
+                <div class="invalid-feedback text-left">
+                  How old is he/she?
+                </div>
+              </div>
+              <div class="col-md mt-2">
+                <input type="text" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputPhone" placeholder="Mobile Number" pattern="^(09|639)\d{9}$" required>
+                <div class="invalid-feedback text-left">
+                  Care to provide us with your contact as well.
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="col-md mt-2">
+                <select class="custom-select bg-light form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputCourse" required>
+                  <option selected disabled>Choose the sport</option>
+                  <option value="">Soccer</option>
+                  <option value="">Basketball</option>
+                  <option value="">Volleyball</option>
+                </select>
+                <div class="invalid-feedback text-left">
+                  Please select a sport.
+                </div>
+              </div>
+              <div class="experience col-md mt-2">
+                <!-- <input type="text" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputPhone" placeholder="Mobile Number"> -->
+                <p>Past experience playing sports?</p>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" required>
+                  <label class="form-check-label" for="inlineRadio1">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" required>
+                  <label class="form-check-label" for="inlineRadio2">No</label>
+                </div>
+                <div class="invalid-feedback text-left">
+                  How about the first name.
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="col mt-2">
+                <input type="submit" class="enrollBtn btn btn-success" name="enrollBtn" value="Submit">
+              </div>
+            </div>
           </form>
 
         </div>
@@ -218,7 +355,7 @@
   </section>
 
   <!-- Contact Section -->
-  <section class="contact-section bg-black">
+  <section class="contact-section">
     <div class="container">
 
       <div class="row">
@@ -275,7 +412,7 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-black small text-center text-white-50">
+  <footer class="bg-primary small text-center text-black-50">
     <div class="container">
       Copyright &copy; Kickstarters Philippines 2019
     </div>
@@ -290,7 +427,7 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/grayscale.min.js"></script>
-
+  <script src="js/main.js"></script>
 </body>
 
 </html>
